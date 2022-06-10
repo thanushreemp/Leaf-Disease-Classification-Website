@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOmato Leaf Disease Classification</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="sec1">
+        <h2>Tomato Leaf Disease Classification</h2>
+        
+        <form class="text-center" action="/" method="post" enctype="multipart/form-data">
+            <input class="form-control" type="file" name="imagefile">
+            <input class="btn" type="submit" value="Predict Image">
+             
+        {% if prediction %}
+            <p class="text">Image is a {{prediction}}</p>
+        {% endif %}
+
+        </form>
+    
+        <div class="details">
+            <div class="sec2">
+                <h3 id="about">About Us</h3>
+                <p>
+                    This is a webpage Developed by RECA Lab, School of Electronics and Communication, REVA University in colabration with GKVK University. The main Intension for this webpage is to help out the farmers who grow Tomato.
+                </p>
+            </div>
+
+            <div class="sec3">
+                <h3 id="contact">Contact Us</h3>
+                <p>
+                    RECA Lab </br>
+                    School of Electronics and Communication </br>
+                    Reva University
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
